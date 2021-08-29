@@ -2,6 +2,8 @@
 
 const today = () => {
   // write code for dates.today
+  const date = new Date();
+  console.log(date);
 
 }
 

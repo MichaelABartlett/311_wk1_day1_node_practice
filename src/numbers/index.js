@@ -29,8 +29,14 @@ const sum = (arr) => {
 
 const comboSum = (arr, sum) => {
   // write code for numbers.comboSum
-  
-
+  for(let i = 1; i < arr.length; i++){
+    let nums = arr[1] + arr[i];
+    if(nums == sum){
+      return true;
+    } else {
+      return false;
+    }
+  }
 }
 
 module.exports = {

@@ -17,16 +17,16 @@ const pairs = (str) => {
   return arr;
 }
 //
-let str = 'break thing into pieces of two';
-let arr = [];
-let text = "";
-for (let i = 0; i < str.length; i+=2) {
-  text = str[i] + str[i+1];
-  //console.log(text);
-  arr.push(text);
+// let str = 'break thing into pieces of two';
+// let arr = [];
+// let text = "";
+// for (let i = 0; i < str.length; i+=2) {
+//   text = str[i] + str[i+1];
+//   //console.log(text);
+//   arr.push(text);
   
-}
-console.log(arr)
+// }
+// console.log(arr)
 //
 //
 

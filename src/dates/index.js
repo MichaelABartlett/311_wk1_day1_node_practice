@@ -9,7 +9,7 @@ const moment = require("moment");
 const today = () => {
   // write code for dates.today
   const day = moment().format('dddd');
-  //console.log('the name of the day: ', day);
+  console.log('the name of the day: ', day);
   return day;
 
 }

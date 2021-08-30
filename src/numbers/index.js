@@ -17,15 +17,19 @@ const isEven = (num) => {
 
 // const isEven = (num) => {
 // return num % 2 == 0
-}
+//}
 
 const sum = (arr) => {
   // write code for numbers.sum
-
+  const reducer = (accumulator, currentValue) => accumulator + currentValue;
+  //console.log('sum of array: ',arr.reduce(reducer));
+  const arrSum = arr.reduce(reducer);
+  return arrSum;
 }
 
 const comboSum = (arr, sum) => {
   // write code for numbers.comboSum
+  
 
 }
 

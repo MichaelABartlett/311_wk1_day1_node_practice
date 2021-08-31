@@ -1,44 +1,43 @@
+/**
+ * function will split a string at the 'delim' and put all into a array
+ * @param {string} str the string to be used in the function
+ * @param {*string} delim where the string gets split
+ * @returns a array from the string that is split at the 'delim'
+ */
 const split = (str, delim) => {
-  // write code for strings.split
   const splitArr = str.split(delim);
-  //console.log('the split arr is: ',splitArr);
+  console.log('the split arr is: ',splitArr);
   return splitArr;
 }
-
+/**
+ * break a string into pairs
+ * @param {string} str 
+ * @returns a array from the string that is broken at every 2 index positions
+ */
 const pairs = (str) => {
-  // write code for strings.pairs
   let arr = [];
   let text = '';
   for (let i = 0; i < str.length; i+=2){
     text = str[i] + str[i+1];
     arr.push(text);
   }
-  //console.log('two step array: ',arr)
+  console.log('two step array: ',arr)
   return arr;
 }
-//
-// let str = 'break thing into pieces of two';
-// let arr = [];
-// let text = "";
-// for (let i = 0; i < str.length; i+=2) {
-//   text = str[i] + str[i+1];
-//   //console.log(text);
-//   arr.push(text);
-  
-// }
-// console.log(arr)
-//
-//
-
-
-
+/**
+ * reverse a string
+ * @param {string} str 
+ * @returns a string that is reversed form the original, does not return a array
+ */
 const reverse = (str) => {
-  // write code for strings.reverse
+  console.log('str: ',str)
   const strReverse = str.split('').reverse().join('')
+  console.log('strReverse: ', strReverse)
   return strReverse;
 
 }
 
+// allowing the test to have access to the functions in this file
 module.exports = {
   split,
   pairs,

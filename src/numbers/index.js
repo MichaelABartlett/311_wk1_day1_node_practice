@@ -14,19 +14,30 @@ const isEven = (num) => {
 }
 
 // or
-
+// this is a much cleaner way to do the same thing, more acceptable in the work place
 // const isEven = (num) => {
 // return num % 2 == 0
 //}
 
+/**
+ * this function adds up all the numbers in the array
+ * @param {array} arr is the array being passed in
+ * @returns the sum of all the numbers in the array
+ */
 const sum = (arr) => {
-  // write code for numbers.sum
   const reducer = (accumulator, currentValue) => accumulator + currentValue;
   //console.log('sum of array: ',arr.reduce(reducer));
   const arrSum = arr.reduce(reducer);
   return arrSum;
 }
 
+
+/**
+ * check to see if the sum of any two numbers in the array equal the 'sum' number
+ * @param {array} arr the given arry of nhmbers used in the function
+ * @param {number} sum the number that is being used to check if the sum matches
+ * @returns true if any two numbers in the array equal the 'sum', returns false if no pair of numbers equals the 'sum'
+ */
 const comboSum = (arr, sum) => {
   // write code for numbers.comboSum
   for(let i = 1; i < arr.length; i++){
@@ -39,6 +50,7 @@ const comboSum = (arr, sum) => {
   }
 }
 
+// allowing the test to have access to the functions in this file
 module.exports = {
   isEven,
   sum,
